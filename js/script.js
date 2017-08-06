@@ -9,7 +9,7 @@ $(document).ready(function(){
 
         // Fetch API and combine it with the message
         $.ajax({
-          url: 'https://yoda.p.mashape.com/yoda?sentence='+input, // The URL to the API. You can get this in the API page of the API you intend to consume
+          url: 'https://crossorigin.me/https://yoda.p.mashape.com/yoda?sentence='+input, // The URL to the API. You can get this in the API page of the API you intend to consume
           type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
           data: {}, // Additional parameters here
           // On success, do ...
