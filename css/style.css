@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to bottom right, #F0C27B, #4B1248);
+}
+
+div {
+  margin-top: 40px;
+}

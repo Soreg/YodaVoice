@@ -12,6 +12,27 @@
 </head>
 <body>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Yoda Speak</h1>
+        <p>The Yoda Voice generator lets you input a string below, which will then be displayed in the textbox on the bottom of the screen (at the 'Output goes here' section).</p>
+        <p>Please use full sentences for this to work. Even Yoda requires you to use proper grammar.</p>
+        <p>With you, the force is!</p>
+      </div>
+      <div class="col-md-8 col-md-offset-2 input">
+        <form>
+          <div class="form-group">
+            <label for="sentence">Input string:</label>
+            <textarea class="form-control" rows="3" id="sentence"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-8 col-md-offset-2 outputWrapper">
+        <p id="output">Output goes here</p>
+      </div>
+    </div>
+  </div>
 
   <!-- jQuery CDN -->
   <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
