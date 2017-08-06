@@ -14,12 +14,12 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-8 col-md-offset-2 intro">
         <h1 class="text-center">Yoda Speak</h1>
-        <p>The Yoda Voice generator lets you input a string below, which will then be displayed in the textbox on the bottom of the screen (at the 'Output goes here' section).</p>
-        <p>Please use full sentences for this to work. Even Yoda requires you to use proper grammar.</p>
-        <p>With you, the force is!</p>
-        <p class="text-danger">Please note: The API used in this project is slow. Please have patience when you submit your sentence!</p>
+        <p>The Yoda Voice generator lets you input a sentence below, which will then be converted to Yoda Voice (grammar) in the Output box.</p>
+        <p>Please use full sentences and proper grammar. Yoda refuses to work if you don't.</p>
+        <p>With you, may the force be!</p>
+        <p class="warning">Please note: The API used in this project is slow. Please have patience when you submit your sentence!</p>
       </div>
       <div class="col-md-8 col-md-offset-2 input">
         <form id="yodaForm">
@@ -27,7 +27,7 @@
             <label for="sentence">Input string:</label>
             <textarea class="form-control" rows="3" id="sentence"></textarea>
           </div>
-          <li class="btn btn-block btn-primary">Convert to Yoda Voice</li>
+          <li class="btn btn-block btn-danger">Convert to Yoda Voice</li>
         </form>
       </div>
       <div class="col-md-8 col-md-offset-2 outputWrapper">
@@ -35,6 +35,7 @@
       </div>
     </div>
   </div>
+
 
   <!-- jQuery CDN -->
   <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>

@@ -4,11 +4,38 @@
 }
 
 body {
-  background: linear-gradient(to bottom right, #F0C27B, #4B1248);
+  background: linear-gradient(to right, #606c88, #3f4c6b);
   background-repeat: no-repeat;
   background-size: cover;
+  color: #e0e0e0;
 }
 
-div {
+.intro, .input, .outputWrapper {
   margin-top: 40px;
+}
+
+textarea {
+  background-color: #e0e0e0 !important;
+  resize: none;
+}
+
+.warning {
+  font-weight: 600;
+  font-style: italic;
+  color: #ffb3b3;
+  margin-top: 20px;
+}
+
+p {
+  margin: 5px;
+}
+
+.outputWrapper {
+  background: rgba(204, 153, 255, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#output {
+  color: white;
 }
