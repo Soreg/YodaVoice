@@ -5,6 +5,8 @@
 
 body {
   background: linear-gradient(to bottom right, #F0C27B, #4B1248);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 div {

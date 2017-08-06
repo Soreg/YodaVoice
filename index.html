@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE html>$(document).ready(function(){
+    $("button").click(function(){
+        $("p").slideToggle();
+    });
+});
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -21,11 +25,12 @@
         <p>With you, the force is!</p>
       </div>
       <div class="col-md-8 col-md-offset-2 input">
-        <form>
+        <form id="yodaForm">
           <div class="form-group">
             <label for="sentence">Input string:</label>
             <textarea class="form-control" rows="3" id="sentence"></textarea>
           </div>
+          <li class="btn btn-block btn-primary">Convert to Yoda Voice</li>
         </form>
       </div>
       <div class="col-md-8 col-md-offset-2 outputWrapper">
@@ -38,5 +43,7 @@
   <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- Bootstrap js CDN -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Local js -->
+  <script src="js/script.js"></script>
 </body>
 </html>
