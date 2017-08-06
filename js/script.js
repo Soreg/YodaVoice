@@ -12,14 +12,19 @@ $(document).ready(function(){
           url: 'https://yoda.p.mashape.com/yoda?sentence='+input, // The URL to the API. You can get this in the API page of the API you intend to consume
           type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
           data: {}, // Additional parameters here
+          // On success, do ...
           success: function(data) {
-            console.log(data);
+            // Replace output with the returned string, and add fadeout / fadein effect
+            $('#output').fadeOut('normal', function() {
+              $('#output').html(data);
+              $('#output').fadeIn('normal');
+            });
           },
           error: function(err) {
             console.log(err);
           },
           beforeSend: function(xhr) {
-          xhr.setRequestHeader("X-Mashape-Authorization", "I0rXIJWDosmsh4cTLGANJS83Q9FJp1eVrNBjsnPeqOoCBNwIPk"); // Enter here your Mashape key
+          xhr.setRequestHeader("X-Mashape-Authorization", "RvfMavrOilmshjCMT6UYuicQqViCp1neoHbjsnkXlyf9Ir7mzL"); // Enter here your Mashape key
           }
         });
 
